@@ -1,16 +1,68 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Password Reset Frontend
 
-Currently, two official plugins are available:
+A frontend application for password reset functionality built with modern web technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- User-friendly password reset interface
+- Email verification
+- Secure token validation
+- Form validation
+- Responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (v14 or higher)
+- npm or yarn
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+```bash
+npm install
+```
+
+## Usage
+
+```bash
+npm start
+```
+
+## Project Structure
+
+```
+src/
+├── components/
+├── pages/
+├── services/
+├── utils/
+└── App.js
+```
+
+## Technologies Used
+
+- React
+- Axios (for API calls)
+- CSS/Bootstrap (styling)
+
+## API Integration
+
+This frontend connects to a backend API for password reset endpoints:
+- POST `/api/forgot-password`
+- POST `/api/reset-password`
+
+## Environment Variables
+
+Create a `.env` file with:
+
+```
+REACT_APP_API_URL=http://localhost:5000
+```
+
+## Contributing
+
+Please follow the project's code standards and submit pull requests for review.
+
+## License
+
+MIT
