@@ -1,4 +1,3 @@
-
 # Password Reset Frontend
 
 A frontend application for password reset functionality built with modern web technologies.
@@ -48,15 +47,16 @@ src/
 ## API Integration
 
 This frontend connects to a backend API for password reset endpoints:
-- POST `/api/forgot-password`
-- POST `/api/reset-password`
+
+- POST `/api/auth/forgot-password`
+- POST `/api/auth/reset-password`
 
 ## Environment Variables
 
 Create a `.env` file with:
 
 ```
-REACT_APP_API_URL=http://localhost:5000
+API_URL=https://passwordreset-backend-o89a.onrender.com
 ```
 
 ## Contributing
