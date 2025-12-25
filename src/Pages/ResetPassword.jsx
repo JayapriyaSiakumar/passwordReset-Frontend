@@ -69,7 +69,7 @@ const ResetPassword = () => {
                         id="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder="Enter password"
+                        placeholder="Enter New Password"
                         name="password"
                         type={isVisible ? "text" : "password"}
                         required
